@@ -4,28 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CR3W Shop</title>
-    <!-- <link rel="stylesheet" href="main.css"> -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script>
-        function setThemeClass() {
-            document.documentElement.className = Telegram.WebApp.colorScheme;
-        }
-
-        Telegram.WebApp.onEvent('themeChanged', setThemeClass);
-        setThemeClass();
-    </script>
     <style>
         body {
-/*             background-color: grey; */
-            /* color: var(--tg-theme-text-color); */
-            --bg-color: var(--tg-theme-bg-color, #fff);
             background-color: var(--bg-color);
             color-scheme: var(--tg-color-scheme);
             
         }
         .leftdiv {
             background-color: var(--tg-theme-bg-color);
-            /* color: var(--tg-theme-text-color); */
             float: left;
             width: 150px;
             height: 240px;
@@ -34,12 +21,9 @@
             text-align: center;
             
         }
-        .leftaboutp {
-/*             background-color: var(--tg-theme-bg-color); */
-            
-            
-            /* color: var(--tg-theme-text-color); */
-        }
+/*         .leftaboutp {
+
+        } */
         .leftbuyp {
             
             border-radius: 23px;
@@ -49,11 +33,11 @@
             background-color: var(--tg-theme-bg-color);
             
             
-/*             background-color: var(--tg-theme-bg-color); */
+
         }
         .rightdiv {
             background-color: var(--tg-theme-secondary-bg-color);
-            /* color: var(--tg-theme-text-color); */
+            
             
             float: right;
             border: 3px solid black;
@@ -65,7 +49,7 @@
         .rightaboutp {
             text-align: center;   
             
-            /* color: var(--tg-theme-text-color);*/
+            
         }
         .rightbuyp {
             text-align: center;
@@ -75,32 +59,11 @@
             height: 150px;
             border-radius: 23px;
         }
-        /* .daccount {
-            background-color: var(--tg-theme-);
-            width: 5%;
-            height: 4%;
-            border-radius: 23px;
-            text-align: center;
-            font-size: 150%;
-            
-        }
-        .account {
-            color: white;
-            
-        } */
+
     </style>
 </head>
 <body >
-    <!-- <div class="daccount">
-        <p class="account">Аккаунт</p>
-    </div>
-    
-    <div id="main">
-        <h1>Online store</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam fugit eligendi ipsam aut temporibus? Nam doloribus autem, molestiae, voluptatibus provident quae voluptatum et commodi dolores omnis, praesentium iusto qui fugit.</p>
-        <button id="Buy">Buy</button>
-    </div> -->
-    <!-- <script src="https://telegram.org/js/telegram-web-app.js"></script> -->
+
 
     <div class="leftdiv">
         <img src="photosnkrs/snkrs1.jpg" alt="" class="img">
@@ -125,10 +88,6 @@
     <script>
         const tg = window.Telegram.Webapp;
         
-        Telegram.WebApp.onEvent('themeChanged', function () {
-        bgColorInput.value = Telegram.WebApp.backgroundColor;
-        document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
-        });
     </script>
     
 </body>
@@ -140,98 +99,3 @@
 
 
 
-<!-- <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CR3W Shop</title>
-    
-    <style>
-        body {
-            background-color: var(--tg-theme-bg-color);
-            color: var(--tg-theme-text-color);
-        }
-        .leftdiv {
-            background-color: var(--tg-theme-secondary-bg-color);
-/*             color: var(--tg-theme-text-color); */
-            float: left;
-            width: 3vw;
-            height: 3vw;
-            margin-left: 100px;
-        }
-        .leftaboutp {
-            background-color: var(--tg-theme-bg-color);
-/*             color: var(--tg-theme-text-color); */
-        }
-        /* .leftbuyp {
-
-        } */
-        .rightdiv {
-            background-color: var(--tg-theme-secondary-bg-color);
-/*             color: var(--tg-theme-text-color); */
-            
-            float: right;
-            margin-right: 10px;
-
-        }
-/*         .rightaboutp {
-        color: var(--tg-theme-text-color);
-        } */
-        .img {
-            width: 120px;
-            height: 120px;
-            border-radius: 23px;
-
-        }
-        /* .daccount {
-            background-color: var(--tg-theme-);
-            width: 5%;
-            height: 4%;
-            border-radius: 23px;
-            text-align: center;
-            font-size: 150%;
-            
-        }
-        .account {
-            color: white;
-            
-        } */
-    </style>
-</head>
-<body >
-    <!-- <div class="daccount">
-        <p class="account">Аккаунт</p>
-    </div>
-    
-    <div id="main">
-        <h1>Online store</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam fugit eligendi ipsam aut temporibus? Nam doloribus autem, molestiae, voluptatibus provident quae voluptatum et commodi dolores omnis, praesentium iusto qui fugit.</p>
-        <button id="Buy">Buy</button>
-    </div> -->
-<!--     <script src="https://telegram.org/js/telegram-web-app.js"></script> 
-
-    <div class="leftdiv">
-        <img src="./photosnkrs/snkrs1.jpg" alt="" class="img">
-        <p class="leftaboutp">
-            12000 ₽
-            Puma
-        </p>
-        <p class="leftbuyp">
-            Купить
-        </p>
-    </div>
-    <div class="rightdiv">
-        <img src="./photosnkrs/snkrs2.jpg" alt="" class="img">
-        <p class="rightaboutp">
-            11000 ₽
-            Nike Air Force 1 Low See Thru
-        </p>
-        <p class="rightbuyp">
-            Купить
-        </p>
-    </div>
-
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-</body>
-</html> -->
