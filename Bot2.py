@@ -7,7 +7,7 @@ from aiogram.types.web_app_info import WebAppInfo
 
 
 
-bot = Bot(token='6929043221:AAF4_UHEuuW5ngoyosRWe1UNIoL6jG-0AjM', parse_mode=types.ParseMode.HTML)
+bot = Bot(token='', parse_mode=types.ParseMode.HTML)
 dp = Dispatcher(bot)
 
 
