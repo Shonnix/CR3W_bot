@@ -123,6 +123,11 @@
     </div>
     <script>
         const tg = window.Telegram.Webapp;
+        
+        Telegram.WebApp.onEvent('themeChanged', function () {
+        bgColorInput.value = Telegram.WebApp.backgroundColor;
+        document.body.setAttribute('style', '--bg-color:' + Telegram.WebApp.backgroundColor);
+        });
     </script>
     
 </body>
